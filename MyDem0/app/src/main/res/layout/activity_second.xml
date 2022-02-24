@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/Theme.PlaceBookTwo.AppBarOverlay">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/Theme.PlaceBookTwo.PopupOverlay"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textViewName"
+        style="@style/BookmarkLabel"
+        android:text="Name"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        style="@style/BookmarkEditText"
+        android:hint="Name"
+        android:inputType="text"
+        android:textSize="24sp" />
+</LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/birthdayview"
+            style="@style/BookmarkLabel"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:text="BirthDay"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/SelectBirthday"
+            style="@style/BookmarkEditText"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="DatePicker"
+            android:textSize="18sp">
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+     <LinearLayout android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/LongiText"
+            style="@style/BookmarkLabel"
+            android:layout_width="wrap_content"
+            android:text="Longitude"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editLongi"
+            style="@style/BookmarkEditText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Longitude"
+            android:inputType="text"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/LatiText"
+            style="@style/BookmarkLabel"
+            android:layout_width="wrap_content"
+            android:text="Latitude"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editLati"
+            style="@style/BookmarkEditText"
+            android:layout_height="wrap_content"
+            android:hint="Longitude"
+            android:inputType="text"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    </LinearLayout>
